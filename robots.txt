@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://prabhutejakoda.com/sitemap.xml
+Sitemap: https://my-portfolio-prabhuteja.prabhuteja-digicbyte.workers.dev/sitemap.xml
