@@ -7,9 +7,11 @@
   <meta id="viewport-meta" name="viewport" content="width=device-width, initial-scale=1.0" />
   <script>
     (function() {
+      var isMobile = /Mobi|Android|iPhone/i.test(navigator.userAgent);
+      var lastOrientation = window.innerWidth > window.innerHeight;
+
       function setViewport() {
         var viewport = document.getElementById("viewport-meta");
-        var isMobile = /Mobi|Android|iPhone/i.test(navigator.userAgent);
         var isLandscape = window.innerWidth > window.innerHeight;
         if (isMobile && isLandscape) {
           viewport.setAttribute("content", "width=1280");
@@ -17,9 +19,19 @@
           viewport.setAttribute("content", "width=device-width, initial-scale=1.0");
         }
       }
-      window.addEventListener("resize", setViewport);
-      window.addEventListener("orientationchange", function() { setTimeout(setViewport, 150); });
+      
       setViewport();
+
+      window.addEventListener("orientationchange", function() {
+        if (isMobile) {
+          setTimeout(function() {
+            var currentOrientation = window.innerWidth > window.innerHeight;
+            if (currentOrientation !== lastOrientation) {
+              location.reload();
+            }
+          }, 200);
+        }
+      });
     })();
   </script>
   
@@ -1719,8 +1731,7 @@
                     style="letter-spacing: 1px;">Direct Message</span>
                   <h3 class="tw-text-2xl text-white fw-bold">Send an Inquiry</h3>
                 </div>
-                <form class="footer-three-form" action="mailto:prabhutejakoda@gmail.com" method="post"
-                  enctype="text/plain">
+                <form class="footer-three-form" id="contactForm">
                   <div class="row">
                     <div class="col-md-6 col-12">
                       <div class="position-relative tw-mb-5">
@@ -1894,6 +1905,9 @@
 </body>
 
 </html>
+
+
+
 
 
 

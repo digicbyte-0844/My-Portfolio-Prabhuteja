@@ -349,16 +349,17 @@
     });
 
     // Mobile Orientation Prompt Trigger
-    if (window.innerHeight > window.innerWidth && !sessionStorage.getItem('orientationPromptShown')) {
+    if (window.innerHeight > window.innerWidth ) {
       $('#orientation-prompt').addClass('show-prompt');
       setTimeout(() => {
         $('#orientation-prompt').removeClass('show-prompt');
       }, 3500);
-      sessionStorage.setItem('orientationPromptShown', 'true');
+      
     }
   }
 
 })(jQuery);
+
 
 
 
