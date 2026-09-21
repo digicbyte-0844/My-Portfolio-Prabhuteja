@@ -2005,3 +2005,11 @@ html, body { overflow-x: clip !important; }
   }
 }
 
+
+/* HIDE ORIGINAL PROJECT ARROW BUTTONS ON MOBILE */
+@media (max-width: 991px) {
+  .portfolio-three-btn {
+    display: none !important;
+  }
+}
+
