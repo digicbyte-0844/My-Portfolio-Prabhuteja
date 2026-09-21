@@ -1,0 +1,191 @@
+﻿/* ==========================================================================
+   HERO / BANNER SECTION - IMAGES & SHAPES STYLES
+   File: assets/css/hero-images.css
+   Purpose: Controls portrait cutout image (banner-three-man.png), decorative
+            vector lines, radar pulse shapes, and image dimensions independently
+            without being influenced by text/font-size changes.
+   ========================================================================== */
+
+:root {
+  /* Portrait Cutout (banner-three-man.png) Sizing & Position Variables */
+  --hero-man-max-height: 580px;
+  --hero-man-max-width: 460px;
+  --hero-man-top-offset: 15px;
+  --hero-man-z-index: 2;
+
+  /* Line & Pulse Shape Positioning */
+  --hero-line-bottom-offset: 13%;
+  --hero-carcel-size: 50px;
+}
+
+/* --------------------------------------------------------------------------
+   1. Main Portrait Cutout Image (.banner-three-man)
+   -------------------------------------------------------------------------- */
+.banner-three-man {
+  position: absolute !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  top: var(--hero-man-top-offset) !important;
+  bottom: auto !important;
+  z-index: var(--hero-man-z-index) !important;
+  pointer-events: none;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.banner-three-man img {
+  display: block;
+  max-height: var(--hero-man-max-height);
+  max-width: var(--hero-man-max-width);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.12));
+}
+
+/* Portrait Responsiveness across Breakpoints */
+@media screen and (max-width: 1699px) {
+  :root {
+    --hero-man-max-height: 530px;
+    --hero-man-max-width: 420px;
+    --hero-man-top-offset: 20px;
+  }
+}
+
+@media screen and (max-width: 1499px) {
+  :root {
+    --hero-man-max-height: 480px;
+    --hero-man-max-width: 380px;
+    --hero-man-top-offset: 25px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  :root {
+    --hero-man-max-height: 440px;
+    --hero-man-max-width: 350px;
+    --hero-man-top-offset: 20px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  :root {
+    --hero-man-max-height: 390px;
+    --hero-man-max-width: 310px;
+    --hero-man-top-offset: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  :root {
+    --hero-man-max-height: 330px;
+    --hero-man-max-width: 260px;
+    --hero-man-top-offset: 10px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  :root {
+    --hero-man-max-height: 280px;
+    --hero-man-max-width: 220px;
+    --hero-man-top-offset: 10px;
+  }
+}
+
+@media screen and (max-width: 424px) {
+  :root {
+    --hero-man-max-height: 250px;
+    --hero-man-max-width: 200px;
+    --hero-man-top-offset: 8px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   2. Hero Background Decorative Line Shape (.banner-three-line-shape)
+   -------------------------------------------------------------------------- */
+.banner-three-line-shape {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: var(--hero-line-bottom-offset);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.banner-three-line-shape img {
+  max-width: inherit;
+}
+
+@media screen and (max-width: 1199px) {
+  .banner-three-line-shape {
+    bottom: 30%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .banner-three-line-shape {
+    display: none;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   3. Animated Circular Pulse Shape (.banner-three-carcel-shape)
+   -------------------------------------------------------------------------- */
+.banner-three-carcel-shape {
+  width: var(--hero-carcel-size);
+  height: var(--hero-carcel-size);
+  line-height: 1;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  transform: translateX(-50%);
+  background: #f5f5f5;
+}
+
+.banner-three-carcel-shape div {
+  width: 36px;
+  height: 36px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+.banner-three-carcel-shape div span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  background: #ff5e14;
+  border-radius: 50%;
+}
+
+.banner-three-carcel-shape div span::before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  width: 70%;
+  height: 70%;
+  background-color: rgba(237, 90, 47, 0.47);
+  animation: borderanimate2 2s linear infinite;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.banner-three-carcel-shape div span::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  width: 90%;
+  height: 90%;
+  transform: scale(1.5);
+  border: 1px solid rgba(237, 90, 47, 0.47);
+  animation: borderanimate2 2s linear infinite;
+  border-radius: 50%;
+}

@@ -1,0 +1,200 @@
+/* ==========================================================================
+   HERO / BANNER SECTION - TEXT & TYPOGRAPHY STYLES
+   File: assets/css/hero-text.css
+   Purpose: Controls all text sizes, headings, subtitles, lists, and typography
+            independently without affecting image positioning or shapes.
+   ========================================================================== */
+
+:root {
+  /* Main "DEVELOPER" Headline Sizing Variables */
+  --hero-title-size-xl: 397px;
+  --hero-title-size-1799: 370px;
+  --hero-title-size-1699: 350px;
+  --hero-title-size-1499: 307px;
+  --hero-title-size-1399: 260px;
+  --hero-title-size-1199: 216px;
+  --hero-title-size-991: 166px;
+  --hero-title-size-767: 123px;
+  --hero-title-size-575: 88px;
+  --hero-title-size-424: 78px;
+
+  /* Typography Colors & Line Height */
+  --hero-title-color: #0b0b0b;
+  --hero-title-line-height: 83%;
+  --hero-left-title-color: #0b0b0b;
+  --hero-center-title-color: #ffffff;
+  --hero-center-stroke-color: #0b0b0b;
+}
+
+/* --------------------------------------------------------------------------
+   1. Giant "DEVELOPER" Heading (.banner-three-title)
+   -------------------------------------------------------------------------- */
+.banner-three-title {
+  font-size: var(--hero-title-size-xl) !important;
+  line-height: var(--hero-title-line-height) !important;
+  color: var(--hero-title-color) !important;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+  text-align: center;
+  margin-block-end: 30px;
+  user-select: none;
+  transition: font-size 0.3s ease;
+}
+
+/* Responsive Headline Font Sizes */
+@media screen and (max-width: 1799px) {
+  .banner-three-title {
+    font-size: var(--hero-title-size-1799) !important;
+  }
+}
+
+@media screen and (max-width: 1699px) {
+  .banner-three-title {
+    font-size: var(--hero-title-size-1699) !important;
+  }
+}
+
+@media screen and (max-width: 1499px) {
+  .banner-three-title {
+    font-size: var(--hero-title-size-1499) !important;
+  }
+}
+
+@media screen and (max-width: 1399px) {
+  .banner-three-title {
+    font-size: var(--hero-title-size-1399) !important;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .banner-three-title {
+    font-size: var(--hero-title-size-1199) !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .banner-three-title {
+    font-size: var(--hero-title-size-991) !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .banner-three-title {
+    font-size: var(--hero-title-size-767) !important;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .banner-three-title {
+    font-size: var(--hero-title-size-575) !important;
+  }
+}
+
+@media screen and (max-width: 424px) {
+  .banner-three-title {
+    font-size: var(--hero-title-size-424) !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   2. Left Card Typography (.banner-three-left)
+   -------------------------------------------------------------------------- */
+.banner-three-left-title {
+  font-size: 1.875rem;
+  line-height: 1.35;
+  font-weight: 700;
+  color: var(--hero-left-title-color);
+  margin-block-end: 24px;
+}
+
+@media screen and (max-width: 1699px) {
+  .banner-three-left-title {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 1499px) {
+  .banner-three-left-title {
+    font-size: 1.35rem;
+  }
+}
+
+.banner-three-list ul li {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #222222;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-block-end: 16px;
+}
+
+.banner-three-list ul li:last-child {
+  margin-block-end: 0;
+}
+
+/* --------------------------------------------------------------------------
+   3. Center Sub-headline & Call-To-Action (.banner-three-center)
+   -------------------------------------------------------------------------- */
+.banner-three-center-title {
+  font-size: 3.125rem;
+  line-height: 1.25;
+  font-weight: 700;
+  color: var(--hero-center-title-color);
+  -webkit-text-stroke-width: 1.2px;
+  -webkit-text-stroke-color: var(--hero-center-stroke-color);
+  max-width: 575px;
+  width: 100%;
+  margin: 0 auto 20px auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .banner-three-center-title {
+    font-size: 2.75rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .banner-three-center-title {
+    max-width: 620px;
+    font-size: 2.25rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .banner-three-center-title {
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (max-width: 424px) {
+  .banner-three-center-title {
+    font-size: 1.5rem;
+  }
+}
+
+.banner-three-button a {
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+}
+
+/* --------------------------------------------------------------------------
+   4. Right Card Counter Typography (.banner-three-right)
+   -------------------------------------------------------------------------- */
+.banner-three-counter-title {
+  font-size: 2.625rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-block-end: 8px;
+}
+
+.banner-three-counter-paragraph {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+

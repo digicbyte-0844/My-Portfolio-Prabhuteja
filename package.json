@@ -1,0 +1,31 @@
+{
+  "name": "prabhuteja-koda-portfolio",
+  "version": "1.0.0",
+  "description": "Prabhuteja Koda - Full Stack Developer Portfolio",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server . --port=3000 --watch=index.html,assets/css,assets/js,assets/images",
+    "start": "live-server . --port=3000",
+    "serve": "http-server . -p 3000 -c-1 -o",
+    "format": "prettier --write \"**/*.{html,css,js,json,md}\""
+  },
+  "keywords": [
+    "portfolio",
+    "full-stack-developer",
+    "react",
+    "angular",
+    "nodejs",
+    "nestjs",
+    "mysql",
+    "cloudflare",
+    "gsap",
+    "responsive"
+  ],
+  "author": "Prabhuteja Koda",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "live-server": "^1.2.2",
+    "prettier": "^3.5.3"
+  }
+}
