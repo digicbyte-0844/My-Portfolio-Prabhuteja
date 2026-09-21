@@ -338,16 +338,27 @@
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          $(entry.target).animate({ opacity: 1, top: 0 }, 800, 'swing');
+          $(entry.target).addClass('is-revealed');
           observer.unobserve(entry.target);
         }
       });
     }, { threshold: 0.1 });
     
-    $('.portfolio-three-item').css({ opacity: 0, position: 'relative', top: '50px' }).each(function() {
+    $('.portfolio-three-item').addClass('mobile-paper-anim').each(function() {
       observer.observe(this);
     });
+
+    // Mobile Orientation Prompt Trigger
+    if (window.innerHeight > window.innerWidth && !sessionStorage.getItem('orientationPromptShown')) {
+      $('#orientation-prompt').addClass('show-prompt');
+      setTimeout(() => {
+        $('#orientation-prompt').removeClass('show-prompt');
+      }, 3500);
+      sessionStorage.setItem('orientationPromptShown', 'true');
+    }
   }
 
 })(jQuery);
+
+
 
