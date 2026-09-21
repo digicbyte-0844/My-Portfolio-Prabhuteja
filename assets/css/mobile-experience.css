@@ -2050,3 +2050,7 @@ html, body { overflow-x: clip !important; }
   50% { transform: rotate(-90deg); }
 }
 
+
+/* INSTAGRAM BRAND COLOR */
+.dot-instagram { background-color: #E1306C !important; }
+
