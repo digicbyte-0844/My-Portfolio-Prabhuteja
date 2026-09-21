@@ -332,7 +332,6 @@
       $alert.fadeOut();
     }, 6000);
   });
-});
 
   // Mobile Projects Scroll Animation Fix
   if ($(window).width() <= 991) {
@@ -351,3 +350,4 @@
   }
 
 })(jQuery);
+
