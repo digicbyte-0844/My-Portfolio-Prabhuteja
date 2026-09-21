@@ -4,7 +4,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta id="viewport-meta" name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>
+    (function() {
+      function setViewport() {
+        var viewport = document.getElementById("viewport-meta");
+        var isMobile = /Mobi|Android|iPhone/i.test(navigator.userAgent);
+        var isLandscape = window.innerWidth > window.innerHeight;
+        if (isMobile && isLandscape) {
+          viewport.setAttribute("content", "width=1280");
+        } else {
+          viewport.setAttribute("content", "width=device-width, initial-scale=1.0");
+        }
+      }
+      window.addEventListener("resize", setViewport);
+      window.addEventListener("orientationchange", function() { setTimeout(setViewport, 150); });
+      setViewport();
+    })();
+  </script>
   
   <!-- Primary Meta Tags -->
   <title>Prabhuteja Koda | Full Stack Developer</title>
@@ -1877,5 +1894,7 @@
 </body>
 
 </html>
+
+
 
 
