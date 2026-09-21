@@ -4,7 +4,7 @@
   "description": "Prabhuteja Koda - Full Stack Developer Portfolio",
   "main": "index.html",
   "scripts": {
-    "build": "mkdir -p dist && cp -R index.html assets _headers robots.txt sitemap.xml dist/",
+    "build": "mkdir -p dist && cp -R index.html assets _headers _redirects robots.txt sitemap.xml dist/",
     "dev": "live-server . --port=3000 --watch=index.html,assets/css,assets/js,assets/images",
     "start": "live-server . --port=3000",
     "serve": "http-server . -p 3000 -c-1 -o",
@@ -30,3 +30,4 @@
     "prettier": "^3.5.3"
   }
 }
+
