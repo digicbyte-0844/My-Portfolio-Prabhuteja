@@ -1819,9 +1819,11 @@
             </div>
           </div>
         </div>
-        <div class="position-absolute top-0 start-0 w-100 h-100 z-n1 bg-black">
-          <img class="w-100 h-100 object-fit-cover" src="assets/images/thumbs/footer-img.jpeg"
-            alt="Footer Background" style="opacity: 0.15; object-position: center 25%;" />
+        <!-- Footer Background Layer -->
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="z-index: -1;">
+          <img class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" src="assets/images/thumbs/footer-img.jpeg" alt="Footer Background" style="object-position: center 25%;" />
+          <!-- Dark Overlay to make text readable -->
+          <div class="position-absolute top-0 start-0 w-100 h-100 bg-black" style="opacity: 0.85;"></div>
         </div>
       </section>
     </div>

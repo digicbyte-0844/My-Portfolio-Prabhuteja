@@ -1947,3 +1947,27 @@
     transform: translateY(-1px) !important;
   }
 }
+
+/* FIX AOS & SCROLL ON MOBILE */
+html, body { overflow-x: clip !important; }
+
+
+/* AUTO-ANIMATE BRAND LOGOS ON MOBILE (Simulate hover without cursor) */
+@media (max-width: 991px) {
+  .brand-active-media img {
+    animation: colorPulse 3s infinite alternate ease-in-out !important;
+  }
+  @keyframes colorPulse {
+    0% { filter: grayscale(100%) opacity(70%); transform: scale(1); }
+    100% { filter: grayscale(0%) opacity(100%); transform: scale(1.1); }
+  }
+  .brand-item:nth-child(1) .brand-active-media img { animation-delay: 0s !important; }
+  .brand-item:nth-child(2) .brand-active-media img { animation-delay: 0.4s !important; }
+  .brand-item:nth-child(3) .brand-active-media img { animation-delay: 0.8s !important; }
+  .brand-item:nth-child(4) .brand-active-media img { animation-delay: 1.2s !important; }
+  .brand-item:nth-child(5) .brand-active-media img { animation-delay: 1.6s !important; }
+  .brand-item:nth-child(6) .brand-active-media img { animation-delay: 2.0s !important; }
+  .brand-item:nth-child(7) .brand-active-media img { animation-delay: 2.4s !important; }
+  .brand-item:nth-child(8) .brand-active-media img { animation-delay: 2.8s !important; }
+}
+
