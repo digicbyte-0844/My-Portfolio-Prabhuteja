@@ -332,4 +332,22 @@
       $alert.fadeOut();
     }, 6000);
   });
+});
+
+  // Mobile Projects Scroll Animation Fix
+  if ($(window).width() <= 991) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          $(entry.target).animate({ opacity: 1, top: 0 }, 800, 'swing');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    
+    $('.portfolio-three-item').css({ opacity: 0, position: 'relative', top: '50px' }).each(function() {
+      observer.observe(this);
+    });
+  }
+
 })(jQuery);

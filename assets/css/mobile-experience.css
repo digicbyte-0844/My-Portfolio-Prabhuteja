@@ -1971,3 +1971,37 @@ html, body { overflow-x: clip !important; }
   .brand-item:nth-child(8) .brand-active-media img { animation-delay: 2.8s !important; }
 }
 
+
+/* MOBILE-ONLY PROJECT LINK BUTTON (REPLACES DESKTOP CUSTOM CURSOR) */
+@media (max-width: 991px) {
+  .portfolio-thumb {
+    position: relative;
+  }
+  .portfolio-thumb::after {
+    content: "View Project";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--main-two-600, #ff5722); /* Fallback to theme accent */
+    color: #ffffff;
+    font-weight: 700;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 14px;
+    pointer-events: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    z-index: 10;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .portfolio-thumb::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 5;
+    pointer-events: none;
+  }
+}
+
