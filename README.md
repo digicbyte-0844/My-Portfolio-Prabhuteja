@@ -10,7 +10,7 @@ Results driven Full Stack Developer and MCA graduate specializing in engineering
   <a href="https://portfolio-prabhuteja.web.app/">
     <img src="https://img.shields.io/badge/🌐_Live_Demo-Visit_Portfolio-00C853?style=for-the-badge" />
   </a>
-  <a href="https://github.com/Prabhutejakoda4">
+  <a href="https://github.com/digicbyte-0844">
     <img src="https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github" />
   </a>
   <a href="https://linkedin.com/in/prabhuteja-koda">
@@ -32,7 +32,7 @@ Results driven Full Stack Developer and MCA graduate specializing in engineering
 
 ### 💻 GitHub
 
-**https://github.com/Prabhutejakoda4**
+**https://github.com/digicbyte-0844**
 
 ---
 
@@ -390,7 +390,7 @@ This project is available for personal and commercial portfolio use.
 https://portfolio-prabhuteja.web.app/
 
 ### GitHub
-https://github.com/Prabhutejakoda4
+https://github.com/digicbyte-0844
 
 ### LinkedIn
 https://linkedin.com/in/prabhuteja-koda
