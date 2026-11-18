@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enterprise Dairy ERP &amp; Logistics Platform | Angular 19</title>
+  <meta name="description" content="Explore an enterprise dairy ERP built with Angular 19 and Firebase, featuring milk procurement, route logistics, driver collections, accounting, and analytics.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://my-portfolio-prabhuteja.prabhuteja-digicbyte.workers.dev/projects/enterprise-dairy-erp-logistics/">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://my-portfolio-prabhuteja.prabhuteja-digicbyte.workers.dev/projects/enterprise-dairy-erp-logistics/">
+  <meta property="og:title" content="Enterprise Dairy ERP &amp; Logistics Platform | Angular 19">
+  <meta property="og:description" content="A technical case study of a dairy supply chain ERP spanning procurement, logistics, driver collections, accounting, and analytics.">
+  <meta property="og:image" content="https://my-portfolio-prabhuteja.prabhuteja-digicbyte.workers.dev/assets/images/thumbs/project-slms-erp.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Enterprise Dairy ERP &amp; Logistics Platform">
+  <meta name="twitter:description" content="Angular 19 and Firebase architecture for dairy procurement, logistics, billing, and accounting.">
+  <meta name="twitter:image" content="https://my-portfolio-prabhuteja.prabhuteja-digicbyte.workers.dev/assets/images/thumbs/project-slms-erp.jpg">
+  <link rel="icon" href="../../assets/images/logo/favicon.png" type="image/png">
+  <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "Enterprise Dairy ERP & Logistics Platform",
+    "description": "An enterprise dairy supply chain ERP covering raw milk procurement, route logistics, point-of-sale workflows, driver collections, financial accounting, and analytics.",
+    "url": "https://my-portfolio-prabhuteja.prabhuteja-digicbyte.workers.dev/projects/enterprise-dairy-erp-logistics/",
+    "image": "https://my-portfolio-prabhuteja.prabhuteja-digicbyte.workers.dev/assets/images/thumbs/project-slms-erp.jpg",
+    "author": {
+      "@type": "Person",
+      "name": "Prabhuteja Koda",
+      "url": "https://my-portfolio-prabhuteja.prabhuteja-digicbyte.workers.dev/"
+    },
+    "keywords": ["enterprise dairy ERP", "dairy management software", "dairy logistics management", "Angular 19", "Firebase", "Firestore"]
+  }
+  </script>
+  <style>
+    :root{--ink:#171717;--muted:#626b75;--accent:#c59d5f;--paper:#f7f7f5}
+    body{background:var(--paper);color:var(--ink);font-family:Arial, sans-serif;line-height:1.7}
+    .case-nav{padding:22px 0;border-bottom:1px solid #e5e5e1;background:#fff}
+    .case-nav a,.text-link{color:var(--ink);text-decoration:none;font-weight:700}
+    .case-wrap{max-width:1120px;margin:auto;padding:0 24px}
+    .eyebrow{letter-spacing:.14em;text-transform:uppercase;font-size:.75rem;font-weight:700;color:#8b6c3d}
+    .hero{padding:82px 0 52px}
+    h1{font-size:clamp(2.5rem,6vw,5rem);line-height:1.04;letter-spacing:-.045em;font-weight:800;max-width:950px}
+    .lead{font-size:1.2rem;color:var(--muted);max-width:780px}
+    .hero-img{width:100%;max-height:520px;object-fit:cover;border-radius:18px;border:1px solid #e5e5e1}
+    .meta-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin:36px 0}
+    .meta-card,.content-card{background:#fff;border:1px solid #e8e8e4;border-radius:14px;padding:22px}
+    .meta-card strong{display:block;font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:6px}
+    .meta-card span{font-weight:700}
+    .case-section{padding:32px 0}
+    .case-section h2{font-size:clamp(1.7rem,3vw,2.4rem);font-weight:800;letter-spacing:-.03em;margin-bottom:18px}
+    .case-section p,.case-section li{color:#4e5660;font-size:1.04rem}
+    .case-section li{margin-bottom:10px}
+    .two-col{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:18px}
+    .stack{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}
+    .stack span{background:#f1eee8;border:1px solid #e6dfd2;border-radius:99px;padding:7px 12px;font-size:.85rem;font-weight:700}
+    .cta{background:#171717;color:#fff;border-radius:18px;padding:34px;margin:48px 0}
+    .cta p{color:#d4d4d4}
+    .cta a{color:#171717;background:#e3c18d;padding:12px 18px;border-radius:8px;display:inline-block;text-decoration:none;font-weight:800;margin:6px 8px 0 0}
+    footer{padding:28px 0;color:var(--muted);border-top:1px solid #e5e5e1}
+    @media(max-width:600px){.hero{padding:56px 0 34px}.case-wrap{padding:0 18px}.cta{padding:24px}}
+  </style>
+</head>
+<body>
+  <header class="case-nav">
+    <div class="case-wrap d-flex justify-content-between align-items-center">
+      <a href="../../">Prabhuteja Koda</a>
+      <a href="../../#projects" class="text-link">← All projects</a>
+    </div>
+  </header>
+  <main class="case-wrap">
+    <section class="hero">
+      <p class="eyebrow">Project 01 · Enterprise ERP &amp; Logistics</p>
+      <h1>Enterprise Dairy ERP &amp; Logistics Platform</h1>
+      <p class="lead">A connected operations platform designed to bring dairy procurement, delivery logistics, point-of-sale workflows, driver collections, and financial accounting into one operational system.</p>
+      <div class="meta-grid" aria-label="Project overview">
+        <div class="meta-card"><strong>Frontend</strong><span>Angular 19 · TypeScript</span></div>
+        <div class="meta-card"><strong>Cloud platform</strong><span>Firebase · Firestore</span></div>
+        <div class="meta-card"><strong>Backend automation</strong><span>Node.js Cloud Functions</span></div>
+        <div class="meta-card"><strong>Operations</strong><span>Procurement · Routes · POS · Accounts</span></div>
+      </div>
+      <img class="hero-img" src="../../assets/images/thumbs/project-slms-erp.jpg" alt="Enterprise dairy ERP and logistics platform project preview" fetchpriority="high">
+    </section>
+
+    <section class="case-section">
+      <p class="eyebrow">01 · Business context</p>
+      <h2>One operational view across the dairy supply chain</h2>
+      <p>Dairy operations coordinate recurring procurement, inventory movement, customer billing, delivery routes, driver collections, and account reconciliation. This project brings those workflows together so operational activity and financial records can be managed within a shared application.</p>
+      <p>The platform covers raw milk procurement, multi-route logistics, point-of-sale activity, driver-facing workflows, and business reporting.</p>
+    </section>
+
+    <section class="case-section">
+      <p class="eyebrow">02 · Engineering approach</p>
+      <h2>Built around clear workflows and controlled access</h2>
+      <div class="two-col">
+        <article class="content-card">
+          <h3 class="h4 fw-bold">Reactive frontend</h3>
+          <p>Angular 19 Standalone Components and Signals structure the user interface and its reactive state. The application separates operational areas into focused workflows for procurement, logistics, POS, and accounts.</p>
+        </article>
+        <article class="content-card">
+          <h3 class="h4 fw-bold">Data and access model</h3>
+          <p>Firestore is organized into 17 collections. Firebase Authentication and Firestore security rules support multi-tier role-based access control (RBAC) for protected application data.</p>
+        </article>
+        <article class="content-card">
+          <h3 class="h4 fw-bold">Accounting automation</h3>
+          <p>An automated double-entry ledger supports daily billing, balance calculations, and driver wallet collections, connecting operational transactions with accounting records.</p>
+        </article>
+        <article class="content-card">
+          <h3 class="h4 fw-bold">Scheduled backend tasks</h3>
+          <p>Node.js Cloud Functions handle server-side scheduled jobs, including recurring processing and monthly statement generation.</p>
+        </article>
+        <article class="content-card">
+          <h3 class="h4 fw-bold">Driver experience</h3>
+          <p>An offline-capable Progressive Web App interface supports delivery drivers in route-based workflows where connectivity may be inconsistent.</p>
+        </article>
+        <article class="content-card">
+          <h3 class="h4 fw-bold">Operational visibility</h3>
+          <p>Chart.js dashboards present business and operational data in visual form to support day-to-day monitoring.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <p class="eyebrow">03 · Core capabilities</p>
+      <h2>What the platform brings together</h2>
+      <ul>
+        <li><strong>Milk procurement:</strong> capture and manage raw milk procurement activity.</li>
+        <li><strong>Route logistics:</strong> coordinate multi-route delivery operations and driver workflows.</li>
+        <li><strong>Point of sale:</strong> support sales and billing activity within the wider operational system.</li>
+        <li><strong>Driver collections:</strong> track driver wallet collections and related balances.</li>
+        <li><strong>Financial accounting:</strong> maintain double-entry ledger workflows for daily transactions.</li>
+        <li><strong>Statements and reporting:</strong> automate monthly statement generation and surface metrics through dashboards.</li>
+      </ul>
+    </section>
+
+    <section class="case-section">
+      <p class="eyebrow">04 · Technology</p>
+      <h2>Technology stack</h2>
+      <p>The implementation combines a modern Angular frontend with Firebase-managed identity and data, serverless Node.js automation, and chart-based reporting.</p>
+      <div class="stack" aria-label="Technology stack">
+        <span>Angular 19</span><span>Standalone Components</span><span>Signals</span><span>TypeScript</span><span>Firebase Auth</span><span>Cloud Firestore</span><span>Firestore Security Rules</span><span>Node.js</span><span>Cloud Functions</span><span>Progressive Web App</span><span>Chart.js</span>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <p class="eyebrow">05 · Engineering considerations</p>
+      <h2>What made the system challenging</h2>
+      <ul>
+        <li>Keeping procurement, route activity, billing, collections, and ledger records consistent across connected workflows.</li>
+        <li>Designing access boundaries for different operational roles using authentication and database security rules.</li>
+        <li>Supporting driver-facing workflows in environments where network availability can vary.</li>
+        <li>Automating recurring server-side tasks and statement generation without making routine operations depend on manual processing.</li>
+      </ul>
+      <p>Performance figures and quantified business outcomes are intentionally not stated here without independently verifiable measurement data.</p>
+    </section>
+
+    <section class="cta">
+      <p class="eyebrow">Have a complex workflow to build?</p>
+      <h2 class="h2 fw-bold text-white">Let's discuss your next software project.</h2>
+      <p>Available for full-time engineering opportunities and selected freelance work involving web applications, business systems, and cloud-backed platforms.</p>
+      <a href="mailto:prabhutejakoda@gmail.com?subject=Project%20Enquiry">Discuss a project</a>
+      <a href="https://linkedin.com/in/prabhuteja-koda" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
+    </section>
+  </main>
+  <footer><div class="case-wrap d-flex flex-wrap justify-content-between gap-2"><span>© 2026 Prabhuteja Koda</span><a href="../../" class="text-link">Back to portfolio ↑</a></div></footer>
+</body>
+</html>
